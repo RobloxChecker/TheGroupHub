@@ -25,6 +25,34 @@
             <ol id="leaderboardList"></ol>
         </div>
     </div>
+
+    <!-- Tutorial overlay -->
+    <div class="overlay" id="tutorialOverlay">
+        <div class="tutorial-box">
+            <h2>Welcome to Our Website</h2>
+            <p>Follow these instructions to get started:</p>
+            <ol>
+                <li>Step 1: Click to get numbersand get points!</li>
+                <li>Step 2: Upgrade to get luck getting higher numbers!</li>
+                <li>Step 3: Any high numbers you get they will be on the leaderboard!</li>
+                <!-- Add more steps as needed -->
+            </ol>
+            <div class="close-button" onclick="closeTutorial()">Close</div>
+        </div>
+    </div>
+    <!-- End of Tutorial overlay -->
+
     <script src="script.js"></script>
+
+    <script>
+        // JavaScript functions to show/hide the tutorial overlay
+        function openTutorial() {
+            document.getElementById("tutorialOverlay").style.display = "block";
+        }
+
+        function closeTutorial() {
+            document.getElementById("tutorialOverlay").style.display = "none";
+        }
+    </script>
 </body>
 </html>
