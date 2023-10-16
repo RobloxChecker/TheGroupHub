@@ -3,56 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucky Clickers</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <title>File Downloader</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Lucky Clickers</h1>
-        <div class="info">
-            <p>Your Luck Level: <span id="luckLevel">1</span></p>
-            <p>Points: <span id="points">0</span></p>
-            <p>Upgrade Cost: <span id="upgradeCost">10</span></p>
-        </div>
-        <button id="upgradeButton">Upgrade Luck</button>
-        <button id="generateButton">Generate Random Number</button>
-        <div class="result">
-            <p>Random Number:</p>
-            <p id="randomNumber">-</p>
-        </div>
-        <div class="leaderboard">
-            <h2>Leaderboard</h2>
-            <ol id="leaderboardList"></ol>
-        </div>
-    </div>
-
-    <!-- Tutorial overlay -->
-    <div class="overlay" id="tutorialOverlay">
-        <div class="tutorial-box">
-            <h2>Welcome to Our Website</h2>
-            <p>Follow these instructions to get started:</p>
-            <ol>
-                <li>Step 1: Click to get number and get points!</li>
-                <li>Step 2: Upgrade to get luck getting higher numbers!</li>
-                <li>Step 3: Any high numbers you get they will be on the leaderboard!</li>
-                <!-- Add more steps as needed -->
-            </ol>
-            <div class="close-button" onclick="closeTutorial()">Close</div>
-        </div>
-    </div>
-    <!-- End of Tutorial overlay -->
-
+    <h1>Click the button to install the file</h1>
+    <button id="downloadButton">Install</button>
     <script src="script.js"></script>
-
-    <script>
-        // JavaScript functions to show/hide the tutorial overlay
-        function openTutorial() {
-            document.getElementById("tutorialOverlay").style.display = "block";
-        }
-
-        function closeTutorial() {
-            document.getElementById("tutorialOverlay").style.display = "none";
-        }
-    </script>
 </body>
 </html>
