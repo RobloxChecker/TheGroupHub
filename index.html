@@ -1,14 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>File Downloader</title>
+    <title>The Group Hut</title>
 </head>
 <body>
-    <h1>Click the button to install the file</h1>
-    <button id="downloadButton">Install</button>
-    <script src="script.js"></script>
+    <button id="videoButton">Click Me</button>
+    <div id="videoContainer" style="display: none;">
+        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=H8ZH_mkfPUY" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <script>
+        const button = document.getElementById("videoButton");
+        const videoContainer = document.getElementById("videoContainer");
+
+        button.addEventListener("click", function() {
+            videoContainer.style.display = "block";
+        });
+    </script>
 </body>
 </html>
